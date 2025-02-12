@@ -1,13 +1,13 @@
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+package test;
 
-class AppTest {
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+public class AppTest {
 
     @Test
-    void testMainMethod() {
-        // You can add tests for the main method or other methods in the App class here
-        assertTrue(true); // Placeholder assertion
+    public void testSum() {
+        int result = 2 + 3;
+        assertEquals("La suma debe ser 5", 5, result);
     }
-
-    // Additional test cases can be added here
 }
