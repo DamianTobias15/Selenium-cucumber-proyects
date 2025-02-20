@@ -1,3 +1,7 @@
+com/example/runners/TestRunner.class
+com/example/runners/CucumberTest.class
+com/example/utils/ReportManager.class
+com/example/pages/HomePage.class
 com/example/steps/ExampleSteps.class
-AppTest.class
-runner/CucumberTest.class
+com/example/utils/DriverManager.class
+com/example/steps/AppTest.class

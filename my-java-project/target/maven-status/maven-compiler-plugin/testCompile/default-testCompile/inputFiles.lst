@@ -1,6 +1,7 @@
-/Users/damian/Documents/SeleniumAutomation/my-java-project/src/test/java/com/example/AppTest.java
-/Users/damian/Documents/SeleniumAutomation/my-java-project/src/test/java/com/example/ExampleSteps.java
-/Users/damian/Documents/SeleniumAutomation/my-java-project/src/test/java/runner/CucumberTest.java
-/Users/damian/Documents/SeleniumAutomation/my-java-project/src/test/java/runners/CucumberTest.java
-/Users/damian/Documents/SeleniumAutomation/my-java-project/src/test/java/runners/TestRunner.java
-/Users/damian/Documents/SeleniumAutomation/my-java-project/src/test/java/stepdefinitions/StepDefinitions.java
+/Users/damian/Documents/SeleniumAutomation/my-java-project/src/test/java/com/example/pages/HomePage.java
+/Users/damian/Documents/SeleniumAutomation/my-java-project/src/test/java/com/example/runners/CucumberTest.java
+/Users/damian/Documents/SeleniumAutomation/my-java-project/src/test/java/com/example/runners/TestRunner.java
+/Users/damian/Documents/SeleniumAutomation/my-java-project/src/test/java/com/example/steps/AppTest.java
+/Users/damian/Documents/SeleniumAutomation/my-java-project/src/test/java/com/example/steps/ExampleSteps.java
+/Users/damian/Documents/SeleniumAutomation/my-java-project/src/test/java/com/example/utils/DriverManager.java
+/Users/damian/Documents/SeleniumAutomation/my-java-project/src/test/java/com/example/utils/ReportManager.java

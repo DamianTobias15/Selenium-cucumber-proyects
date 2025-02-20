@@ -1,4 +1,7 @@
-Feature: Prueba básica
+Feature: Login Functionality
 
-  Scenario: Validar que Cucumber funciona
-    Given un paso de prueba
+  Scenario: Successful login
+    Given I navigate to the home page
+    When I enter username "testuser" and password "password123"
+    And I click the login button
+    Then I should see the welcome message
