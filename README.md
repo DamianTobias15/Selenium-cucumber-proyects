@@ -93,6 +93,8 @@ Coloca los drivers en una carpeta y configura la ruta en el archivo config.prope
 📂 Estructura del Proyecto
 El proyecto está organizado de la siguiente manera:
 
+
+
 Copy
 my-java-project
 ├── src
@@ -111,6 +113,11 @@ my-java-project
 │           └── config.properties # Configuraciones del proyecto
 ├── pom.xml                     # Archivo de configuración de Maven
 └── README.md                   # Documentación del proyecto
+
+
+
+
+
 🧪 Ejecución de Pruebas
 Para ejecutar las pruebas, sigue estos pasos:
 
