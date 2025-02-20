@@ -1,5 +1,44 @@
 # My Java Project
 
+# Selenium Cucumber Framework
+
+Este proyecto es un framework para desarrollar pruebas automatizadas utilizando **Selenium**, **Cucumber**, **JUnit** y **Gherkin**. El objetivo es facilitar la creación de scripts de pruebas automatizadas para aplicaciones web (WebUI) de manera estructurada y escalable.
+
+---
+
+## 📋 Tabla de Contenidos
+1. [Requisitos Previos](#requisitos-previos)
+2. [Configuración del Proyecto](#configuración-del-proyecto)
+3. [Estructura del Proyecto](#estructura-del-proyecto)
+4. [Ejecución de Pruebas](#ejecución-de-pruebas)
+5. [Manejo de Datos de Prueba](#manejo-de-datos-de-prueba)
+6. [Reporting](#reporting)
+7. [Integración con CI/CD](#integración-con-cicd)
+8. [Contribución](#contribución)
+9. [Licencia](#licencia)
+
+---
+
+## 🛠️ Requisitos Previos
+
+Antes de comenzar, asegúrate de tener instaladas las siguientes herramientas:
+
+- **Java JDK 8 o superior**.
+- **Maven** (para la gestión de dependencias).
+- **Navegadores** (Chrome, Firefox, etc.) y sus respectivos drivers (ChromeDriver, GeckoDriver).
+- **IDE** (IntelliJ IDEA, Eclipse, etc.) recomendado.
+
+---
+
+## 🚀 Configuración del Proyecto
+
+Sigue estos pasos para configurar el proyecto en tu entorno local:
+
+1. **Clona el repositorio**:
+   ```bash
+   git clone https://github.com/DamianTobias15/Selenium-cucumber-proyects.git
+   cd Selenium-cucumber-proyects
+
 ## Overview
 This project is a simple Java application that serves as a starting point for Java development. It includes a main application class and a corresponding test class.
 
