@@ -22,20 +22,39 @@ public class ExampleSteps {
 
     @Before
     public void setUp(Scenario scenario) {
-        driver = DriverManager.getDriver();
-        homePage = new HomePage(driver);
-        test = ReportManager.getInstance().createTest(scenario.getName());
+        try {
+            driver = DriverManager.getDriver();
+            homePage = new HomePage(driver);
+            test = ReportManager.getInstance().createTest(scenario.getName());
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException("Failed to initialize test setup: " + e.getMessage());
+        }
     }
 
     @After
     public void tearDown(Scenario scenario) {
-        if (scenario.isFailed()) {
-            test.log(Status.FAIL, "Scenario failed: " + scenario.getName());
-        } else {
-            test.log(Status.PASS, "Scenario passed: " + scenario.getName());
+        try {
+            if (scenario.isFailed()) {
+                test.log(Status.FAIL, "Scenario failed: " + scenario.getName());
+                // Aquí podrías agregar una captura de pantalla o más detalles del error
+            } else {
+                test.log(Status.PASS, "Scenario passed: " + scenario.getName());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                DriverManager.quitDriver();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            try {
+                ReportManager.closeReport(); // Cierra el informe
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
-        DriverManager.quitDriver();
-        ReportManager.closeReport(); // Cierra el informe
     }
 
     @Given("I navigate to the home page")
@@ -62,6 +81,6 @@ public class ExampleSteps {
     public void i_should_see_the_welcome_message() {
         test.log(Status.INFO, "Verifying the welcome message");
         String actualTitle = driver.getTitle();
-        assertTrue("El título de la página no coincide", actualTitle.contains("Welcome"));
+        assertTrue("El título de la página no coincide. Título actual: " + actualTitle, actualTitle.contains("Welcome"));
     }
 }
