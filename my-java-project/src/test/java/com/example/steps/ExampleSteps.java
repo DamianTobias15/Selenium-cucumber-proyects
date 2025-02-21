@@ -35,6 +35,7 @@ public class ExampleSteps {
             test.log(Status.PASS, "Scenario passed: " + scenario.getName());
         }
         DriverManager.quitDriver();
+        ReportManager.closeReport(); // Cierra el informe
     }
 
     @Given("I navigate to the home page")

@@ -15,4 +15,10 @@ public class ReportManager {
         }
         return extent;
     }
+
+    public static void closeReport() {
+        if (extent != null) {
+            extent.flush(); // Cierra el informe y escribe los datos en el archivo HTML
+        }
+    }
 }
