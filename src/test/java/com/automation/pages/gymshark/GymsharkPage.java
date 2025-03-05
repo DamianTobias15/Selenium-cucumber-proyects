@@ -1,4 +1,4 @@
-package com.automation.pages;
+package com.automation.pages.gymshark;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
